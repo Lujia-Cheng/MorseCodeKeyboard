@@ -1,0 +1,31 @@
+<resources>
+
+    <string-array name="visual_setting">
+        <item>Visual</item>
+        <item>Audio</item>
+        <item>Haptic</item>
+    </string-array>
+
+    <string-array name="visual_setting_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="visual_setting_value_default" />
+
+    <string-array name="style_setting">
+        <item>Character</item>
+        <item>Word</item>
+        <item>Sentence</item>
+    </string-array>
+
+    <string-array name="style_setting_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="style_setting_value_default" />
+    <string-array name="keys" />
+</resources>

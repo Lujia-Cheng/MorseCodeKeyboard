@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Feedback">
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/visual_setting_value_default"
+            android:entries="@array/visual_setting"
+            android:entryValues="@array/visual_setting_value"
+            android:key="key"
+            android:title="Feedback" />
+        <ListPreference
+            android:defaultValue="@array/style_setting_value_default"
+            android:entries="@array/style_setting"
+            android:entryValues="@array/style_setting_value"
+            android:key="Giving feedback per"
+            android:title="Style" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Speed" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Demo">
+        <EditTextPreference android:title="Try me"
+            android:summary="Click Me to Feel Your New Setting"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

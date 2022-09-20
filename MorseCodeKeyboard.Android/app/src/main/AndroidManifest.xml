@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ayoitsluke.morsecodeime"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature
+        android:name="android.hardware.audio.output"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <!-- Declares the input method service -->
+        <service
+            android:name=".MyIMService"
+            android:exported="true"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+        <!-- Optional: an activity for controlling the IME settings -->
+        <activity
+            android:name=".MySettingsFragment"
+            android:exported="true"
+            android:label="morsecodeimesetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- Settings -->
+
+    </application>
+</manifest>
+

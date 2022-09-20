@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MorseCodeIME</string>
+    <string name="morse_code_label" />
+    <string name="morse_code_settings" />
+    <string name="imedesc">IME_Description</string>
+
+</resources>
